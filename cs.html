@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #fff;
+        }
+
+        .courses {
+            background-color: #058;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            padding: 30px 20px;
+            grid-column-gap: 20px;
+            grid-row-gap: 30px;
+        }
+
+        .course {
+            background-color: #fff;
+            color: #000;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            transition: transform 0.2s ease;
+        }
+
+        .course img {
+            width: 100%;
+            height: 70%;
+            object-fit: cover;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+
+        .course:hover {
+            transform: scale(1.05);
+        }
+
+        .course img:hover {
+            transform: scale(1.1);
+        }
+
+        h1 {
+            padding: 10px;
+            color: #0ef;
+            font-size: 24px;
+            margin: 0;
+        }
+
+        h3 {
+            padding: 5px;
+            color: #ff046f;
+            font-size: 18px;
+            margin: 5px 0;
+        }
+
+        button {
+            background-color: #081;
+            color: #fff;
+            border: none;
+            padding: 15px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+
+        button:hover {
+            background-color: #043;
+        }
+
+        @media screen and (max-width: 768px) {
+            .courses {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    <title>Courses</title>
+</head>
+<body>
+    <section class="courses">
+        <div class="course">
+            <img src="webd.jpeg" alt="Web Development">
+            <h1>Web Development</h1>
+            <button>Price: $999</button>
+        </div>
+        <div class="course">
+            <img src="cc.jpeg" alt="C Course">
+            <h1>C Course</h1>
+           <button>Price: $959</button>
+        </div>
+        <div class="course">
+            <img src="cplus.jpeg" alt="C++ Course">
+            <h1>C++ Course</h1>
+            <button>Price: $799</button>
+        </div>
+        <div class="course">
+            <img src="java.jpeg" alt="Java Course">
+            <h1>Java Course</h1>
+           <button>Price: $499</button>
+        </div>
+        <div class="course">
+            <img src="python.jpeg" alt="Python Course">
+            <h1>Python Course</h1>
+            <button>Price: $699</button>
+        </div>
+        <div class="course">
+            <img src="php.jpeg" alt="PHP and Database Courses">
+            <h1>PHP and Database Courses</h1>
+           <button>Price: $899</button>
+        </div>
+    </section>
+</body>
+</html>
